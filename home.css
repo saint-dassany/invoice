@@ -1,0 +1,144 @@
+/* Importing Google fonts */
+@import url(
+    'https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap'
+    );
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 60%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logg{
+    width: 50px;
+    cursor: pointer;
+    padding-right: 0;
+    border-radius: 100%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f3961c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.banner .menn{
+    color: #fff;
+    size: 20px;
+    text-align: right;
+    cursor: pointer;
+}
+.search .form{
+    border-radius: 6px;
+    color: aqua;
+
+}
+
+.search .sech{
+    color: aqua;
+}
+
+.hero-section{
+    background-image: url(background2.png);
+    min-height: 100vh;
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.hero-section .hero-details .title{
+    font-size: xx-large;
+    color: #f3961c;
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.hero-section .hero-details .description{
+    max-width: 100%;
+    margin: 24px 0 40px;   
+    font-size: medium;
+}
+
+.hero-section .hero-details .button{
+    gap: 23px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 20px;
+    background: #f3961c;
+    color: #3b141c;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: medium;
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover{
+    color: #3b141c;
+    border-color: #f3961c;
+    background: #f3961c;
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 25px;
+}

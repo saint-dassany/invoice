@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8900bb1fa.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <aside class="sidebar collapsed">
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="logo1.png" alt="logo">
+            </a>
+            <button class="toggler sidebar-toggler">
+               <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="toggler menu-toggler">
+               <i class='bx bx-menu' ></i>
+            </button>
+        </header> 
+    <nav class="sidebar-nav">
+        <!--Primary top nav-->
+        <ul class="nav-list primary-nav">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link">
+                    <span class="nav-icon"><i class='bx bx-home-alt icon' ></i></span>
+                    <span class="nav-label">Home</span>
+                </a>
+                <span class="nav-tooltip">Home</span>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-icon"><i class='bx bxs-file-plus icon'></i></span>
+                    <span class="nav-label">New</span>
+                </a>
+                <span class="nav-tooltip">New</span>
+            </li>
+             <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-icon"><i class='bx bx-receipt icon' ></i></span>
+                    <span class="nav-label">Invoices</span>
+                </a>
+                <span class="nav-tooltip">Invoices</span>
+            </li>
+        </ul>
+        
+        <!--secondary bottom nav-->
+        <ul class="nav-list secondary-nav">
+        <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-icon"><i class='bx bxs-user-account icon' ></i></i></span>
+                    <span class="nav-label">Profile</span>
+                </a>
+                <span class="nav-tooltip">Profile</span>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                    <span class="nav-icon"><i class='bx bx-log-out icon' ></i></span>
+                    <span class="nav-label">Logout</span>
+                </a>
+                <span class="nav-tooltip">Logout</span>
+            </li>
+        </ul>
+    </nav>
+
+    </aside>
+
+    <section class="hero">
+    <div class="hero-content">
+       <h1>Invoice</h1>
+    </div>
+    
+</section>
+
+     <section class="form">
+      <form id="invoiceForm">
+        <input type="text" id="invoiceNumber" placeholder="Invoice Number" required>
+        <input type="text" id="invoiceDesc" placeholder="Description" required>
+        <input type="number" id="invoiceAmount" placeholder="Amount" required>
+        <button type="submit">Add Invoice</button>
+    </form>
+
+    <ul id="invoiceList"></ul>
+     </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
